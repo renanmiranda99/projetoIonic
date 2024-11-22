@@ -1,0 +1,55 @@
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  
+    .pais-detalhes {
+      text-align: center; 
+      img {
+        max-width: 100%;
+        height: auto; 
+        margin-bottom: 16px;
+      }
+  
+      h1 {
+        margin: 8px 0;
+        font-size: 1.5rem; 
+      }
+  
+      p {
+        margin: 4px 0;
+        font-size: 1rem; 
+      }
+    }
+  }
+  
+ion-header {
+  ion-toolbar {
+    background-color: #f8f9fa; 
+    color: #ffffff; 
+  
+    ion-grid {
+      ion-row {
+        ion-col {
+          text-align: center; 
+          font-size: 1.2rem; 
+          font-weight: 500; 
+          padding: 0.5rem 0; 
+  
+          cursor: pointer;
+          transition: color 0.3s ease, background-color 0.3s ease; 
+  
+          &:hover {
+            color: #007bff; 
+            background-color: #e9ecef; 
+          }
+  
+          &[routerLink] {
+            text-decoration: none; 
+          }
+        }
+      }
+    }
+  }
+}

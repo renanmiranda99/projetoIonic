@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6" routerLink="/lista">
+          Lista
+        </ion-col>
+        <ion-col size="6" routerLink="/info">
+          Info
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content *ngIf="pais">
+  <div class="pais-detalhes">
+    <img [src]="pais.flags.svg" alt="Bandeira de {{ pais.name.official }}" />
+    <h1>{{ pais.name.official }}</h1>
+    <p><strong>Capital:</strong> {{ pais.capital }}</p>
+    <p><strong>População:</strong> {{ pais.population | number }}</p>
+    <p><strong>Continente:</strong> {{ pais.continents }}</p>
+    <p><strong>Área:</strong> {{ pais.area | number }} km²</p>
+    <p><strong>Idiomas:</strong> {{ pais.languages | json }}</p>
+  </div>
+</ion-content>
