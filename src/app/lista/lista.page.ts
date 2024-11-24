@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { PaisApiService } from '../services/pais-api.service';
+import { PaisApiService } from '../services/pais-api/pais-api.service';
 
 @Component({
   selector: 'app-lista',

@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'info',
     loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
   },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./pages/favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
 ];
 
 @NgModule({
