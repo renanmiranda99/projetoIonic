@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PaisApiService } from '../services/pais-api/pais-api.service';
+import { PaisApiService } from '../../services/pais-api/pais-api.service';
 
 @Component({
   selector: 'app-detalhes',

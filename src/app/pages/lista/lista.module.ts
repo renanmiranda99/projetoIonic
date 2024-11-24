@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ListaPageRoutingModule } from './lista-routing.module';
 
 import { ListaPage } from './lista.page';
-import { FormatarNomePipe } from '../pipe/formatar-nome/formatar-nome.pipe';
+import { FormatarNomePipe } from '../../pipe/formatar-nome/formatar-nome.pipe';
 
 @NgModule({
   imports: [

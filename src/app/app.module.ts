@@ -8,23 +8,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormatarNomePipe } from './pipe/formatar-nome/formatar-nome.pipe';
 
-// Pipes
-
-// Diretivas
-//import { DestaqueDirective } from './directives/destaque.directive';
-//import { ClasseAtivaDirective } from './directives/classe-ativa.directive';
-
-// Services
-//import { ConfigService } from './services/config.service';
-
 @NgModule({
   declarations: [
     AppComponent,
-    // Pipes
     FormatarNomePipe,
-    // Diretivas
-    //DestaqueDirective,
-    //ClasseAtivaDirective,
   ],
   imports: [
     BrowserModule,
@@ -34,8 +21,6 @@ import { FormatarNomePipe } from './pipe/formatar-nome/formatar-nome.pipe';
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     provideHttpClient(),
-    // Serviços
-    //ConfigService,
   ],
   bootstrap: [AppComponent],
 })
