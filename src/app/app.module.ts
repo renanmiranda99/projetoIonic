@@ -6,12 +6,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FormatarNomePipe } from './pipe/formatar-nome/formatar-nome.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormatarNomePipe,
   ],
   imports: [
     BrowserModule,

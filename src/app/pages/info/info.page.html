@@ -16,16 +16,14 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-textarea
-      placeholder="Type something here"
-      [autoGrow]="true"
-      value="A API usada neste projeto é a Rest Countries API, é uma API pública que fornece informações 
-      detalhadas sobre todos os países do mundo. Ela retorna dados no formato JSON pode ser 
+  <div class="info-container">
+    <h1>Sobre a API</h1>
+    <p>
+      A API usada neste projeto é a Rest Countries API, é uma API pública que fornece informações 
+      detalhadas sobre todos os países do mundo. Ela retorna dados no formato JSON e pode ser 
       utilizada em aplicações que envolvem geografia, turismo, ou qualquer funcionalidade que 
-      necessite de  informações sobre países. Fornece dados como: nome do país, população, região
-      capital, entre outros."
-    >
-    </ion-textarea>
-  </ion-item>
+      necessite de informações sobre países. Fornece dados como: nome do país, população, região, 
+      capital, entre outros.
+    </p>
+  </div>
 </ion-content>

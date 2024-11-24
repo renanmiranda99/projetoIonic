@@ -15,3 +15,23 @@
     </ion-grid>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <div class="cards-container">
+    <ion-card *ngFor="let pais of favoritos">
+      <img
+        [src]="pais.flags.svg"
+        alt="Bandeira de {{ pais.name.official }}"
+        width="100%"
+        height="auto"
+      />
+      <ion-card-header>
+        <ion-card-title>{{ pais.name.official }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Capital:</strong> {{ pais.capital }}</p>
+        <p><strong>População:</strong> {{ pais.population | number }}</p>
+        <p><strong>Continente:</strong> {{ pais.continents }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
