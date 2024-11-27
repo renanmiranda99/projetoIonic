@@ -6,6 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AlterarFundoDirective } from './directives/alterar-fundo/alterar-fundo.directive';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    AlterarFundoDirective,
     IonicModule.forRoot(),
     AppRoutingModule,
   ],

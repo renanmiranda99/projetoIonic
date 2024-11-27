@@ -15,6 +15,7 @@
     </ion-grid>
   </ion-toolbar>
 </ion-header>
+
 <ion-content *ngIf="pais">
   <div class="pais-detalhes">
     <img [src]="pais.flags.svg" alt="Bandeira de {{ pais.name.official }}" />
@@ -23,6 +24,10 @@
     <p><strong>População:</strong> {{ pais.population | number }}</p>
     <p><strong>Continente:</strong> {{ pais.continents }}</p>
     <p><strong>Área:</strong> {{ pais.area | number }} km²</p>
-    <p><strong>Idiomas:</strong> {{ pais.languages | json }}</p>
+    <p><strong>Idiomas:</strong>
+      <span *ngFor="let lang of pais.languages | keyvalue; let i = index">
+        {{ lang.value }}<span *ngIf="i < (pais.languages | keyvalue).length - 1">, </span>
+      </span>
+    </p>
   </div>
 </ion-content>

@@ -24,32 +24,34 @@ ion-content {
     }
   }
   
-ion-header {
-  ion-toolbar {
-    background-color: #f8f9fa; 
-    color: #ffffff; 
+  ion-header {
+    ion-toolbar {
+      background-color: #f8f9fa;
+      color: #ffffff;
   
-    ion-grid {
-      ion-row {
-        ion-col {
-          text-align: center; 
-          font-size: 1.2rem; 
-          font-weight: 500; 
-          padding: 0.5rem 0; 
+      ion-grid {
+        ion-row {
+          ion-col {
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
   
-          cursor: pointer;
-          transition: color 0.3s ease, background-color 0.3s ease; 
+            cursor: pointer;
+            transition: color 0.3s ease, background-color 0.3s ease;
   
-          &:hover {
-            color: #007bff; 
-            background-color: #e9ecef; 
-          }
+            &:hover {
+              color: #007bff;
+              background-color: #e9ecef;
+            }
   
-          &[routerLink] {
-            text-decoration: none; 
+            &[routerLink] {
+              text-decoration: none;
+            }
           }
         }
       }
     }
   }
-}
+  

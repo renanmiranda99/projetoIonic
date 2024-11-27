@@ -8,11 +8,13 @@ import { ListaPageRoutingModule } from './lista-routing.module';
 
 import { ListaPage } from './lista.page';
 import { FormatarNomePipe } from '../../pipe/formatar-nome/formatar-nome.pipe';
+import { AlterarFundoDirective } from 'src/app/directives/alterar-fundo/alterar-fundo.directive';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
+    AlterarFundoDirective,
     IonicModule,
     ListaPageRoutingModule,
   ],
