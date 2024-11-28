@@ -26,8 +26,8 @@ ion-content {
   
   ion-header {
     ion-toolbar {
-      background-color: #f8f9fa;
-      color: #ffffff;
+      background-color: #acaeb1;
+      color: #bdbbbb;
   
       ion-grid {
         ion-row {
@@ -37,6 +37,7 @@ ion-content {
             font-size: 1.2rem;
             font-weight: 500;
             padding: 0.5rem 0;
+            
   
             cursor: pointer;
             transition: color 0.3s ease, background-color 0.3s ease;
